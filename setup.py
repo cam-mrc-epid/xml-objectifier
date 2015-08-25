@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 setup(
-    name = "xml-objectifier-0.1",
+    name = "xml-objectifier",
     version = "0.1",
     packages = find_packages(),
 
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine
-    install_requires = ['lxml==3.3.5', 'bunch==1.0.1'],
+    install_requires = ['lxml', 'bunch'],
 
     package_data = {
         # If any package contains *.txt or *.rst files, include them:
