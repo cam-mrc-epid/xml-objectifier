@@ -301,9 +301,6 @@ class Application(object):
             if isinstance(data[k], datetime.date):
                 data[k] = str(data[k])
 
-    def get_section(self, section_number):
-        return deepcopy(self.sections[str(section_number)])
-
     def get_sections(self):
         """Instantiates Section objects for each section."""
         sections = {}
